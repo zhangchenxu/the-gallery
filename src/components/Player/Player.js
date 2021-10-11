@@ -7,20 +7,20 @@ import usePlayerControls from '../usePlayerControls/usePlayerControls'
 
 const Player = (props) => {
   const { camera } = useThree()
-  const { 
-    forward, 
-    backward, 
-    left, 
-    right, 
-    jump, 
+  const {
+    forward,
+    backward,
+    left,
+    right,
+    jump,
     speed
   } = usePlayerControls()
-  const [ref, api] = useSphere(() => ({ 
-    mass: 1, 
-    type: "Dynamic", 
-    position: [-11, 5, 33],
+  const [ref, api] = useSphere(() => ({
+    mass: 1,
+    type: "Dynamic",
+    position: [-11, 20, 33],
     rotation: [0, 0, Math.PI / 2],
-    args: 5,
+    args: 10,
      ...props
   }))
 
@@ -29,7 +29,7 @@ const Player = (props) => {
     //update reference everytime velocity changes
     api.velocity.subscribe(v => velocity.current = v)
   }, [api.velocity])
-  
+
   useFrame(() => {
     //copy position of our physical sphere
     camera.position.copy(ref.current.position)
@@ -40,7 +40,7 @@ const Player = (props) => {
     const direction = new THREE.Vector3()
     //calculate direction aligned with the camera
     direction.subVectors(frontVector, sideVector).normalize().multiplyScalar(speed).applyEuler(camera.rotation)
-    
+
     //apply the velocity to our sphere
     api.velocity.set(direction.x, velocity.current[1], direction.z)
 
@@ -54,7 +54,7 @@ const Player = (props) => {
   return (
     <>
     <PointerLockControls />
-    <mesh ref={ref}></mesh>
+    <mesh ref={ref}/>
     </>
     )
 
