@@ -1,60 +1,106 @@
-import React, {useEffect, useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import Picture from '../Picture/Picture';
 import Display from '../Display/Display';
 import imageConfig from '../../config';
 import Image from '../Picture/Image';
-import {useToast} from '../../hooks/useToast';
+import {notification, Popover} from 'antd';
+import {SpotLight} from 'react-three-fiber/components';
 
+notification.config({
+  maxCount: 1,
+  placement: 'bottomRight',
+  duration: 0
+});
 const Art = () => {
-  const {clearToast, showToast} = useToast();
+  const [currentInfo, setCurrentInfo] = useState(null);
+  const showToast = (info) => {
+    setCurrentInfo(info);
+    notification.open({
+      key: "nft",
+      message: info.name + "  Price: " + info.price,
+      description:
+        'Press E to trade'
+    });
+
+  };
+  const clearToast = () => {
+    setCurrentInfo(null);
+  };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      switch (e.code) {
+        case 'KeyE':
+          currentInfo && window.open(currentInfo.url, '__blank');
+        default:
+          return;
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [currentInfo]);
+
   const onPointerEnter = (info) => {
-    console.log("over");
+    console.log('over');
     showToast(info);
   };
   const onPointerLeave = () => {
-    console.log("out");
+    console.log('out');
     clearToast();
+    notification.destroy()
   };
   return (
     <>
       {
+        imageConfig.imageOnWallA.map((nft, idx) => {
+            return <Image
+              onPointerEnter={onPointerEnter}
+              onPointerLeave={onPointerLeave}
+              key={idx}
+              info={nft}
+              url={nft.image}
+              position={[-34.9, 10, -10 + 5 * idx]}
+              bgPosition={[-35, 10, -10 + 5 * idx]}
+              rotation={[Math.PI / 2, Math.PI / 2, -Math.PI / 2]}
+              metalness={0}
+              roughness={0.3}
+            />;
+          }
+        )
+      }
+
+      {
         imageConfig.imageOnWallA.map((nft, idx) => <Image
-          onPointerEnter={onPointerEnter}
-          onPointerLeave={onPointerLeave}
+          url={nft.image}
           key={idx}
           info={nft}
-          url={nft.image}
-          position={[-34.9, 10, -10 + 5 * idx]}
-          bgPosition={[-35, 10, -10 + 5 * idx]}
-          rotation={[Math.PI / 2, Math.PI / 2, -Math.PI / 2]}
+          onPointerEnter={onPointerEnter}
+          onPointerLeave={onPointerLeave}
+          position={[-20 + 5 * idx, 10, 39.9]}
+          bgPosition={[-20 + 5 * idx, 10, 40]}
+          rotation={[0, Math.PI, 0]}
           metalness={0}
           roughness={0.3}
         />)
       }
 
-      {/*{*/}
-      {/*  imageAlist.map((nft, idx) => <Image*/}
-      {/*    url={nft.image}*/}
-      {/*    scale={[2.5, 2.5, 2.5]}*/}
-      {/*    position={[-20 + 5 * idx, 10, 39.9]}*/}
-      {/*    bgPosition={[-20 + 5 * idx, 10, 40]}*/}
-      {/*    rotation={[0, Math.PI, 0]}*/}
-      {/*    metalness={0}*/}
-      {/*    roughness={0.3}*/}
-      {/*  />)*/}
-      {/*}*/}
 
-
-      {/*{*/}
-      {/*  imageAlist.map((nft, idx) => <Image*/}
-      {/*    url={nft.image}*/}
-      {/*    position={[34.8, 10, -10 + 5 * idx]}*/}
-      {/*    bgPosition={[34.9, 10, -10 + 5 * idx]}*/}
-      {/*    rotation={[Math.PI / 2, -Math.PI / 2, Math.PI / 2]}*/}
-      {/*    metalness={0}*/}
-      {/*    roughness={0.3}*/}
-      {/*  />)*/}
-      {/*}*/}
+      {
+        imageConfig.imageOnWallA.map((nft, idx) => <Image
+          url={nft.image}
+          key={idx}
+          info={nft}
+          onPointerEnter={onPointerEnter}
+          onPointerLeave={onPointerLeave}
+          position={[34.8, 10, -10 + 5 * idx]}
+          bgPosition={[34.9, 10, -10 + 5 * idx]}
+          rotation={[Math.PI / 2, -Math.PI / 2, Math.PI / 2]}
+          metalness={0}
+          roughness={0.3}
+        />)
+      }
 
       {/* liam portrait */}
 
@@ -120,7 +166,6 @@ const Art = () => {
       {/*/>*/}
 
     </>
-
   );
 };
 

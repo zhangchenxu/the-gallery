@@ -27,7 +27,7 @@ const Overlay = () => {
     <>
       <App />
       <div className={ready ? "" : "overlay"}>
-        <div className={"start"}
+        <div className={"start start_control"}
              style={{ display: ready ? "none" : "block" }}
              onClick={() => { setReady(true) }}
         >Enter</div>

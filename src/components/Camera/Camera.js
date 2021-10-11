@@ -4,8 +4,9 @@ import { useThree } from 'react-three-fiber';
 const Camera = (props) => {
     const ref = useRef();
     const { setDefaultCamera } = useThree();
-    
+
     useEffect(() => {
+        console.log(ref.current);
         setDefaultCamera(ref.current)
     }, [setDefaultCamera])
 

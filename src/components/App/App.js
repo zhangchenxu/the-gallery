@@ -12,7 +12,7 @@ import Camera from '../Camera/Camera';
 import Player from '../Player/Player';
 import Lights from '../Lights/Lights';
 import 'react-toastify/dist/ReactToastify.min.css';
-import {ToastContainer} from 'react-toastify';
+import 'antd/dist/antd.css'
 
 
 const App = () => {
@@ -42,7 +42,6 @@ const App = () => {
   return (
 
     <>
-      <ToastContainer  limit={1}/>
       <Canvas
         onCreated={({ gl }) => {
           gl.shadowMap.enabled = true

@@ -8,6 +8,7 @@ export function useToast () {
   const [info, SetToastInfo] = useState("");
 
   useEffect(() => {
+    console.log(info);
     if (isShow) {
       toast(info.name + "  " +info.price +  "\n Press E to Enter", {
         position: 'bottom-right',
@@ -18,35 +19,20 @@ export function useToast () {
         progress: undefined,
         autoClose: false
       });
-
-
     } else {
       toast.dismiss();
       SetToastInfo("")
+    }
+    if (toast.isShow) {
 
     }
 
   }, [isShow, info]);
 
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      switch(e.code) {
-        case "KeyE":
-          window.open(info.url, "__blank");
-        default: return;
-      }
-    }
-
-    document.addEventListener("keydown", handleKeyDown)
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown)
-    }
-  }, [isShow, info])
 
 
   function showToast (info) {
-    console.log(info);
-    !isShow && toggleShow(true);
+    toggleShow(true);
     SetToastInfo(info)
   }
 
