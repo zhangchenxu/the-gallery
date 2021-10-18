@@ -52,15 +52,15 @@ const Art = () => {
   return (
     <>
       {
-        imageConfig.imageOnWallA.map((nft, idx) => {
+        imageConfig.imageOnWallC.map((nft, idx) => {
             return <Image
               onPointerEnter={onPointerEnter}
               onPointerLeave={onPointerLeave}
               key={idx}
               info={nft}
               url={nft.image}
-              position={[-34.9, 10, -5 + 10 * idx]}
-              bgPosition={[-35, 10, -5 + 10 * idx]}
+              position={[-34.9, 10, -5 + 12 * idx]}
+              bgPosition={[-35, 10, -5 + 12 * idx]}
               rotation={[Math.PI / 2, Math.PI / 2, -Math.PI / 2]}
               metalness={0}
               roughness={0.3}
@@ -76,8 +76,8 @@ const Art = () => {
           info={nft}
           onPointerEnter={onPointerEnter}
           onPointerLeave={onPointerLeave}
-          position={[-25 + 10 * idx, 10, 39.9]}
-          bgPosition={[-25 + 10 * idx, 10, 40]}
+          position={[-25 + 12 * idx, 10, 39.9]}
+          bgPosition={[-25 + 12 * idx, 10, 40]}
           rotation={[0, Math.PI, 0]}
           metalness={0}
           roughness={0.3}
@@ -86,14 +86,14 @@ const Art = () => {
 
 
       {
-        imageConfig.imageOnWallA.map((nft, idx) => <Image
+        imageConfig.imageOnWallC.map((nft, idx) => <Image
           url={nft.image}
           key={idx}
           info={nft}
           onPointerEnter={onPointerEnter}
           onPointerLeave={onPointerLeave}
-          position={[34.8, 10, -5 + 10 * idx]}
-          bgPosition={[34.9, 10, -5 + 10 * idx]}
+          position={[34.8, 10, -5 + 12 * idx]}
+          bgPosition={[34.9, 10, -5 + 12 * idx]}
           rotation={[Math.PI / 2, -Math.PI / 2, Math.PI / 2]}
           metalness={0}
           roughness={0.3}

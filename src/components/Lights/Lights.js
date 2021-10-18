@@ -38,10 +38,32 @@ const Lights = ({night, performance}) => {
       />
       {performance ?
         <>
+          {/*<SpotLight*/}
+          {/*  key={''}*/}
+          {/*  position={[-32, 18, 12]}*/}
+          {/*  target={[-35, 10, 12]}*/}
+          {/*  intensity={2}*/}
+          {/*  penumbra={0.5}*/}
+          {/*  sNormalBias={0}*/}
+          {/*  sBias={-0.001}*/}
+          {/*  angle={Math.PI / 2}*/}
+          {/*  decay={10}*/}
+          {/*/>*/}
           <SpotLight
             key={''}
-            position={[-32, 18, 12]}
-            target={[-35, 10, 12]}
+            position={[-32, 18, 25]}
+            target={[-35, 12, 25]}
+            intensity={2}
+            penumbra={0.5}
+            sNormalBias={0}
+            sBias={-0.001}
+            angle={Math.PI / 2}
+            decay={10}
+          />
+          <SpotLight
+            key={''}
+            position={[-32, 18, 0]}
+            target={[-35, 12, 0]}
             intensity={2}
             penumbra={0.5}
             sNormalBias={0}
@@ -52,13 +74,13 @@ const Lights = ({night, performance}) => {
           {
             config.imageOnWallA.map((img, idx) => {
               return <SpotLight
-                position={[-20 + 5 * idx, 24, 32]}
-                target={[-20 + 5 * idx, -10, 50]}
+                position={[-25 + 12 * idx, 18, 36]}
+                target={[-25 + 12 * idx, 8, 46]}
                 intensity={1}
                 penumbra={0.5}
                 sNormalBias={0}
                 sBias={-0.001}
-                angle={Math.PI / 12}
+                angle={Math.PI / 4}
                 decay={10}
               />;
             })
@@ -78,8 +100,8 @@ const Lights = ({night, performance}) => {
           {/*    })*/}
 
           <SpotLight
-            position={[33, 18, 10]}
-            target={[34, 10, 10]}
+            position={[32, 18, 0]}
+            target={[32, 10, 0]}
             intensity={2}
             penumbra={0.5}
             sNormalBias={0}
@@ -87,6 +109,16 @@ const Lights = ({night, performance}) => {
             angle={Math.PI / 2}
             decay={10}
           />;
+          <SpotLight
+            position={[32, 18, 20]}
+            target={[32, 10, 20]}
+            intensity={2}
+            penumbra={0.5}
+            sNormalBias={0}
+            sBias={-0.001}
+            angle={Math.PI / 2}
+            decay={10}
+          />
           </>
         :
         null
