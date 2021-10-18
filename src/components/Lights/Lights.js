@@ -2,7 +2,7 @@ import React from 'react';
 import SpotLight from '../SpotLight/Spotlight';
 import PointLight from '../PointLight/PointLight';
 import Spotlight from '../SpotLight/Spotlight';
-import config from '../../config';
+import * as config from '../../config';
 
 const Lights = ({night, performance}) => {
 
