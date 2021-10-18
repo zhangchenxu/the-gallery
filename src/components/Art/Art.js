@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import imageConfig from '../../config';
+import * as imageConfig from '../../config';
 import Image from '../Picture/Image';
 import {notification} from 'antd';
 
