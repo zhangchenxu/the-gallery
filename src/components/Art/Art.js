@@ -86,7 +86,7 @@ const Art = () => {
 
 
       {
-        imageConfig.imageOnWallC.map((nft, idx) => <Image
+        imageConfig.imageOnWallB.map((nft, idx) => <Image
           url={nft.image}
           key={idx}
           info={nft}
