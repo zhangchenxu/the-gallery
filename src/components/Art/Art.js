@@ -1,10 +1,7 @@
-import React, {useEffect, useMemo, useState} from 'react';
-import Picture from '../Picture/Picture';
-import Display from '../Display/Display';
+import React, {useEffect, useState} from 'react';
 import imageConfig from '../../config';
 import Image from '../Picture/Image';
-import {notification, Popover} from 'antd';
-import {SpotLight} from 'react-three-fiber/components';
+import {notification} from 'antd';
 
 notification.config({
   maxCount: 1,
@@ -31,8 +28,9 @@ const Art = () => {
       switch (e.code) {
         case 'KeyE':
           currentInfo && window.open(currentInfo.url, '__blank');
+          break;
         default:
-          return;
+          console.log(1);
       }
     };
 
@@ -50,7 +48,7 @@ const Art = () => {
     console.log('out');
     clearToast();
     notification.destroy()
-  };
+  }
   return (
     <>
       {
@@ -61,8 +59,8 @@ const Art = () => {
               key={idx}
               info={nft}
               url={nft.image}
-              position={[-34.9, 10, -10 + 5 * idx]}
-              bgPosition={[-35, 10, -10 + 5 * idx]}
+              position={[-34.9, 10, -5 + 10 * idx]}
+              bgPosition={[-35, 10, -5 + 10 * idx]}
               rotation={[Math.PI / 2, Math.PI / 2, -Math.PI / 2]}
               metalness={0}
               roughness={0.3}
@@ -78,8 +76,8 @@ const Art = () => {
           info={nft}
           onPointerEnter={onPointerEnter}
           onPointerLeave={onPointerLeave}
-          position={[-20 + 5 * idx, 10, 39.9]}
-          bgPosition={[-20 + 5 * idx, 10, 40]}
+          position={[-25 + 10 * idx, 10, 39.9]}
+          bgPosition={[-25 + 10 * idx, 10, 40]}
           rotation={[0, Math.PI, 0]}
           metalness={0}
           roughness={0.3}
@@ -94,8 +92,8 @@ const Art = () => {
           info={nft}
           onPointerEnter={onPointerEnter}
           onPointerLeave={onPointerLeave}
-          position={[34.8, 10, -10 + 5 * idx]}
-          bgPosition={[34.9, 10, -10 + 5 * idx]}
+          position={[34.8, 10, -5 + 10 * idx]}
+          bgPosition={[34.9, 10, -5 + 10 * idx]}
           rotation={[Math.PI / 2, -Math.PI / 2, Math.PI / 2]}
           metalness={0}
           roughness={0.3}

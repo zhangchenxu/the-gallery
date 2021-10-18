@@ -1,7 +1,6 @@
 import * as THREE from 'three';
-import React, {Suspense, useState} from 'react';
+import React, {useState} from 'react';
 import {useLoader} from 'react-three-fiber';
-import SpotLight from '../SpotLight/Spotlight';
 
 
 function Image ({url, info, bgPosition, position, rotation, onPointerEnter, onPointerLeave}) {
@@ -16,12 +15,12 @@ function Image ({url, info, bgPosition, position, rotation, onPointerEnter, onPo
         setColor('#d8caca');
         onPointerEnter(info);
       }}>
-        <planeBufferGeometry attach="geometry" args={[4, 4]}/>
+        <planeBufferGeometry attach="geometry" args={[8, 8]}/>
         <meshBasicMaterial attach="material" map={texture}/>
       </mesh>
       <mesh
         position={bgPosition} rotation={rotation}>
-        <planeBufferGeometry attach="geometry" args={[4.3, 4.3]}/>
+        <planeBufferGeometry attach="geometry" args={[8.3, 8.3]}/>
         <meshBasicMaterial attach="material" color={color}/>
       </mesh>
     </mesh>

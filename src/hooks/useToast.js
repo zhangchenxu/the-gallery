@@ -1,6 +1,5 @@
-import toastify, {toast} from 'react-toastify';
+import {toast} from 'react-toastify';
 import {useEffect, useState} from 'react';
-import {useKeyPress} from 'react-use';
 
 
 export function useToast () {

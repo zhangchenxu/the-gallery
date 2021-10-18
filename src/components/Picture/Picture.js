@@ -3,7 +3,6 @@ import {useLoader} from 'react-three-fiber';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 import {draco} from 'drei';
 import {useToast} from '../../hooks/useToast';
-import {TextureLoader} from 'react-three-fiber/components';
 
 const Picture = ({
                    url,
