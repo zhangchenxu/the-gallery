@@ -1,94 +1,68 @@
 export const imageOnWallA = [{
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_1.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5995',
-  name: 'Super Shiba #5995',
-  price: "1Eth"
-}, {
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_2.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/1564',
-  name: 'Super Shiba #1564',
-  price: "1Eth"
-}, {
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_3.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5994',
-  name: 'Super Shiba #5994',
-  price: "1Eth"
-}, {
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_4.png',
-  url: 'https://opensea.io/assets/0xde17efac631d766e509c8bb77fc9811b4a3c0750/266',
-  name: 'ZombieCat #266',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=2',
+  name: 'Bubble boy',
+  price: "0.088 ICP"
 }, {
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_5.png',
-  url: 'https://opensea.io/assets/0x7cba74d0b16c8e18a9e48d3b7404d7739bb24f23/7973',
-  name: 'FoxFam #7973',
-  price: "1Eth"
-}];
-export const imageOnWallB = [{
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_6.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5995',
-  name: 'Super Shiba #5995',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=5',
+  name: 'Abstract Traval',
+  price: "0.088 ICP"
 }, {
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_7.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/1564',
-  name: 'Super Shiba #1564',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=7',
+  name: 'Dedicated and lively pool',
+  price: "0.01 ICP"
 }, {
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_8.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5994',
-  name: 'Super Shiba #5994',
-  price: "1Eth"
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_6.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=6',
+  name: 'Lost Poet',
+  price: "0.01 ICP"
+}, {
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_3.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=3',
+  name: 'Crazy kid',
+  price: "0.01 ICP"
+}];
+export const imageOnWallB = [{
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_1.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=1',
+  name: 'eBoy Berlin',
+  price: "0.01 ICP"
+}, {
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_4.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=4',
+  name: 'Lovely Girl',
+  price: "0.01 ICP"
 }, {
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_9.png',
-  url: 'https://opensea.io/assets/0xde17efac631d766e509c8bb77fc9811b4a3c0750/266',
-  name: 'ZombieCat #266',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=garmt-uiaaa-aaaah-aaxxq-cai&tokenId=2',
+  name: 'Abstract Tree',
+  price: "0.01 ICP"
+}, {
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_12.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=garmt-uiaaa-aaaah-aaxxq-cai&tokenId=5',
+  name: 'Shower',
+  price: "0.01 ICP"
 }];
 export const imageOnWallC = [{
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_10.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/1564',
-  name: 'Super Shiba #1564',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=garmt-uiaaa-aaaah-aaxxq-cai&tokenId=3',
+  name: 'Through you',
+  price: "0.01 ICP"
+}, {
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_8.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=garmt-uiaaa-aaaah-aaxxq-cai&tokenId=1',
+  name: 'Colorful Face',
+  price: "0.01 ICP"
 }, {
   image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_11.png',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5994',
-  name: 'Super Shiba #5994',
-  price: "1Eth"
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/#Detail?canisterId=garmt-uiaaa-aaaah-aaxxq-cai&tokenId=4',
+  name: 'Giant Dragon',
+  price: "0.01 ICP"
 }, {
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_12.png',
-  url: 'https://opensea.io/assets/0xde17efac631d766e509c8bb77fc9811b4a3c0750/266',
-  name: 'ZombieCat #266',
-  price: "1Eth"
-}, {
-  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_market_13.png',
-  url: 'https://opensea.io/assets/0x7cba74d0b16c8e18a9e48d3b7404d7739bb24f23/7973',
-  name: 'FoxFam #7973',
-  price: "1Eth"
-}];
-export const imageOnWallD = [{
-  image: 'https://lh3.googleusercontent.com/OlawTUv0Iv1S-dGXnIdzhmB6OF16kQe0DH5phajR8n-BhwFVDJhR0gG7LXRYUpuNKGuAW89pf6afyczgI83xYUkMajz6LjK3S2kZ',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5995',
-  name: 'Super Shiba #5995',
-  price: "1Eth"
-}, {
-  image: 'https://lh3.googleusercontent.com/RVPFPr4RGyUXq_iBoemrxIeFRTS6C2PCgIb61BncRYGdqITvck_TpOBRlw9EIn-e1fxB-ewQnaP6iGCJAASSREprkOCvyqhdeXFKLw',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/1564',
-  name: 'Super Shiba #1564',
-  price: "1Eth"
-}, {
-  image: 'https://lh3.googleusercontent.com/YsDCsQy815Fy37fop23ToF6wTJTwFppxbaO7Tv7O26XxkkHeiZcH300MC9kT87vn3tqOU5mTApiqIXPh992-CeN94Q7WmXlK1B3I',
-  url: 'https://opensea.io/assets/0x48c58b8496642bc4c860c7efc13813b73aa674f7/5994',
-  name: 'Super Shiba #5994',
-  price: "1Eth"
-}, {
-  image: 'https://lh3.googleusercontent.com/8Or_Oq_00TeCR38-aRCdPqvEThsvB4hKx4pKjJlCH8sx9oZz0S9TicsYt56mWMfMxkO_unbzwJM3TjsUIyhe_VP87z-kTfkxygKB',
-  url: 'https://opensea.io/assets/0xde17efac631d766e509c8bb77fc9811b4a3c0750/266',
-  name: 'ZombieCat #266',
-  price: "1Eth"
-}, {
-  image: 'https://lh3.googleusercontent.com/NGOnVLbW7nrlw4UkpFf6EOirpIGlcW4lPcKrUIjtlRjXIcHEPBWl1g7yAk4tF7-cQ9TgpuGm3tGGpuFdH4OZ03KaaseCLDXFvpWXOg=w600',
-  url: 'https://opensea.io/assets/0x7cba74d0b16c8e18a9e48d3b7404d7739bb24f23/7973',
-  name: 'FoxFam #7973',
-  price: "1Eth"
+  image: 'https://storageapi.fleek.co/zhangchenxu-team-bucket/nft/pic_collection_6@1x.png',
+  url: 'https://oouul-taaaa-aaaah-aawaa-cai.raw.ic0.app/97af21f5-b220-499c-9652-18bd46a576b8#Detail?canisterId=ghqkh-zqaaa-aaaah-aaxxa-cai&tokenId=8',
+  name: 'Lost eyes',
+  price: "0.01 ICP"
 }];
